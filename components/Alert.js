@@ -58,5 +58,3 @@ export default function Alert({ alertType, alertBody, triggerAlert, color }) {
   );
 }
 
-
-//TEST
