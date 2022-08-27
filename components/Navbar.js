@@ -4,6 +4,8 @@ import Navmenu from "./Navmenu";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { useAccount, useDisconnect } from "wagmi";
 
+
+// utilize hook to access the connected wallet if it exists, and disocnnect from connected wallet.
 export default function Navbar() {
   const { data: account } = useAccount();
   const { disconnect } = useDisconnect();

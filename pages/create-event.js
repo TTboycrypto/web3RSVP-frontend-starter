@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
 import Link from "next/link";
-import getRandomImage from "../utils/getRandomImage";
 import { ethers } from "ethers";
-import connectContract from "../utils/connectContract";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { useAccount } from "wagmi";
 import Alert from "../components/Alert";
+import connectContract from "../utils/connectContract";
+import getRandomImage from "../utils/getRandomImage";
 
 export default function CreateEvent() {
   const { data: account } = useAccount();
@@ -138,7 +138,7 @@ export default function CreateEvent() {
         )}
         {!success && (
           <h1 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl md:text-5xl mb-4">
-            Create your virtual event
+            Schedule your meeting with me:
           </h1>
         )}
         {account && !success && (
